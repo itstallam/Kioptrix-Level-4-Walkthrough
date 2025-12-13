@@ -1,0 +1,8 @@
+We will run the command 
+-$ ifconfig #to check what ip is allocated to the linux machine and also the subnet.
+
+2nd Command.
+-$ nmap -sn 192.168.56.1/24 # We are trying to see which IP our machine has been allocated to  in the subnet and if the host is up.
+
+3rd Command.
+-$ nmap -p 0-65000 -A 192.168.56.15 #scans all ports from  0- 65000. "-A" flag is for aggressive mode that bundles multiple flags.
