@@ -29,3 +29,5 @@ Now we can head back on the webpage http://192.168.56.10
 
 Put one of the username. My case I used "john". In the password box, we can try to perform
 different SQLi Attacks. After several trials the    ' OR 1=1#    works and we can see John's password (MyNameIsJohn)
+
+See the result on webpage.png
