@@ -26,7 +26,10 @@ Research on the remaining ;)
 
 After the output (see FIND.png)
 
-we see that there's a root user with "" as a password meaning blank is the password.
+
+
+
+We see that there's a root user with "" as a password meaning blank is the password.
 
 We try to access the mysql interface by trying to login
 
@@ -40,6 +43,10 @@ mysql> select * from mysql.func;
 
 See output in MYSQL1.png
 
+
+
+
+
 We find a very important element "sys_exec" which can be used for many ways.
 
 we run the command
@@ -48,6 +55,9 @@ mysql> select sys_exec('usermod -a -G admin john')
 What this command does is adds (-a) John (usermod) to the admin group (-G)
 
 See output in MYSQL2.png
+
+
+
 
 Then quit the mysql interface
 command
