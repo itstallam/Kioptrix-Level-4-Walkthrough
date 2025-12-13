@@ -1,1 +1,31 @@
+From our previous scan we can see that port 22, 80, 139 and 445 are open.
 
+We head over to port 80 and see what we have. http://192.168.56.15:80
+
+We have a webpage with a login form. Since we don't have any usernames we can create one or use a tool
+
+Enum4Linux.
+
+Command is as follows:
+-$ enum4linux 192.168.56.15
+
+See Enum4linux.png for the results.
+
+We find the results like so,
+
+user:[nobody] rid:[0x1f5]
+user:[robert] rid:[0xbbc]
+user:[root] rid:[0x3e8]
+user:[john] rid:[0xbba]
+user:[loneferret] rid:[0xbb8]
+
+You "cat" the result and you get
+robert
+root
+john
+loneferret
+
+Now we can head back on the webpage http://192.168.56.10
+
+Put one of the username. My case I used "john". In the password box, we can try to perform
+different SQLi Attacks. After several trials the    ' OR 1=1#    works and we can see John's password (MyNameIsJohn)
