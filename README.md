@@ -215,9 +215,7 @@ command
 
 💻 System Tools:
 - bash · sudo · usermod · mysql
-
-
-
+```
 
 <p align="center"> <strong>Documentation created for educational purposes</strong><br> All techniques should be practiced only in controlled, authorized environments. </p>
 
