@@ -1,4 +1,5 @@
 theme: jekyll-theme-midnight
 title: VENI VIDI VICI
-description: Welcome to my webpage hosted on GitHub Pages!
+description: Kioptrix Level 4 walthrough.
 show_downloads: false
+baseurl: "/Kioptrix-Level-4-Walkthrough"
