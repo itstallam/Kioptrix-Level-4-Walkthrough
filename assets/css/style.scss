@@ -1,29 +1,29 @@
 ---
 ---
 
-@import "jekyll-theme-tactile";
+@import "jekyll-theme-merlot";
 
-/* DARK OVERRIDE: Tactile Noir */
+/* DARK OVERRIDE: Merlot Gothic */
 
 html,
 body {
-  background-color: #0a0908 !important;
-  color: #e8e2d9 !important;
-  font-family: 'Source Serif 4', 'Merriweather', serif !important;
+  background-color: #0f0508 !important;
+  color: #f2e2e2 !important;
+  font-family: 'Lora', 'Merriweather', serif !important;
 }
 
 .container,
-.wrapper, 
+.wrapper,
 #main-content,
 .page-content,
 .markdown-body,
 .post-content,
 article,
 section {
-  background: #141210 !important;
-  background-color: #141210 !important;
-  color: #e8e2d9 !important;
-  border: 1px solid #2a2520 !important;
+  background: #1a0d12 !important;
+  background-color: #1a0d12 !important;
+  color: #f2e2e2 !important;
+  border: 1px solid #2e1820 !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -31,19 +31,19 @@ h1, h2, h3, h4, h5, h6,
 .page-header .project-name,
 header h1, header h2,
 .post-title {
-  color: #d4a574 !important;
-  font-family: 'Cinzel', 'Playfair Display', Georgia, serif !important;
+  color: #d4af37 !important;
+  font-family: 'Cinzel Decorative', 'Cinzel', serif !important;
 }
 
 a,
 .markdown-body a,
 .post-content a {
-  color: #d4a574 !important;
+  color: #d4af37 !important;
   text-decoration: none !important;
 }
 a:hover,
 .markdown-body a:hover {
-  color: #8b5cf6 !important;
+  color: #9f1239 !important;
   text-decoration: underline !important;
 }
 
@@ -52,73 +52,73 @@ pre, code,
 .highlight code,
 .markdown-body pre,
 .markdown-body code {
-  background: #0f0d0b !important;
-  background-color: #0f0d0b !important;
-  border: 1px solid #2a2520 !important;
-  color: #d4a574 !important;
+  background: #14080c !important;
+  background-color: #14080c !important;
+  border: 1px solid #2e1820 !important;
+  color: #d4af37 !important;
   font-family: 'IBM Plex Mono', 'Fira Code', monospace !important;
 }
 
 table,
 .markdown-body table {
-  background: #141210 !important;
-  background-color: #141210 !important;
-  border: 1px solid #2a2520 !important;
+  background: #1a0d12 !important;
+  background-color: #1a0d12 !important;
+  border: 1px solid #2e1820 !important;
 }
 th, td,
 .markdown-body th,
 .markdown-body td {
-  border: 1px solid #2a2520 !important;
+  border: 1px solid #2e1820 !important;
 }
 th,
 .markdown-body th {
-  background: #0f0d0b !important;
-  background-color: #0f0d0b !important;
-  color: #d4a574 !important;
+  background: #14080c !important;
+  background-color: #14080c !important;
+  color: #d4af37 !important;
 }
 
 hr,
 .markdown-body hr {
   border: 0 !important;
-  border-top: 1px solid #2a2520 !important;
+  border-top: 1px solid #2e1820 !important;
 }
 
 .btn,
 button,
 .markdown-body .btn {
-  background: #141210 !important;
-  background-color: #141210 !important;
-  border: 1px solid #d4a574 !important;
-  color: #d4a574 !important;
+  background: #1a0d12 !important;
+  background-color: #1a0d12 !important;
+  border: 1px solid #d4af37 !important;
+  color: #d4af37 !important;
 }
 .btn:hover,
 button:hover {
-  background: #d4a574 !important;
-  background-color: #d4a574 !important;
-  color: #0a0908 !important;
+  background: #d4af37 !important;
+  background-color: #d4af37 !important;
+  color: #0f0508 !important;
 }
 
 ::selection {
-  background: #d4a574 !important;
-  color: #0a0908 !important;
+  background: #d4af37 !important;
+  color: #0f0508 !important;
 }
 
 ul, ol, li,
 .markdown-body ul,
 .markdown-body ol,
 .markdown-body li {
-  color: #e8e2d9 !important;
+  color: #f2e2e2 !important;
 }
 
 p, span, div,
 .markdown-body p,
 .markdown-body span {
-  color: #e8e2d9 !important;
+  color: #f2e2e2 !important;
 }
 
 .page-header,
 header {
-  background: #141210 !important;
-  background-color: #141210 !important;
-  border-bottom: 1px solid #2a2520 !important;
+  background: #1a0d12 !important;
+  background-color: #1a0d12 !important;
+  border-bottom: 1px solid #2e1820 !important;
 }
