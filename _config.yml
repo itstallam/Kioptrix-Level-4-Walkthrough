@@ -1,9 +1,10 @@
-theme: jekyll-theme-tactile
+theme: jekyll-theme-merlot
 title: "Kioptrix Level 4."
 description: "bOOt to R00t"
 show_downloads: false
 baseurl: "/Kioptrix-Level-4-Walkthrough"
 url: ""
+
 
 plugins:
   - jekyll-feed
