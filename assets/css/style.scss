@@ -1,16 +1,15 @@
-
 ---
 ---
 
-@import "jekyll-theme-time-machine";
+@import "jekyll-theme-minimal";
 
-/* DARK OVERRIDE: Time Machine Retro */
+/* DARK OVERRIDE: Minimal Void */
 
 html,
 body {
-  background-color: #080704 !important;
-  color: #e8e2d4 !important;
-  font-family: 'IBM Plex Mono', 'Courier New', monospace !important;
+  background-color: #0a0c09 !important;
+  color: #e8e6dc !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 .container,
@@ -21,10 +20,10 @@ body {
 .post-content,
 article,
 section {
-  background: #12100c !important;
-  background-color: #12100c !important;
-  color: #e8e2d4 !important;
-  border: 1px solid #2a2418 !important;
+  background: #12140f !important;
+  background-color: #12140f !important;
+  color: #e8e6dc !important;
+  border: 1px solid #262a1e !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -33,7 +32,7 @@ h1, h2, h3, h4, h5, h6,
 header h1, header h2,
 .post-title {
   color: #ffb000 !important;
-  font-family: 'VT323', 'IBM Plex Mono', monospace !important;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace !important;
 }
 
 a,
@@ -53,42 +52,42 @@ pre, code,
 .highlight code,
 .markdown-body pre,
 .markdown-body code {
-  background: #0c0a06 !important;
-  background-color: #0c0a06 !important;
-  border: 1px solid #2a2418 !important;
+  background: #0d0f0a !important;
+  background-color: #0d0f0a !important;
+  border: 1px solid #262a1e !important;
   color: #ffb000 !important;
   font-family: 'IBM Plex Mono', 'Fira Code', monospace !important;
 }
 
 table,
 .markdown-body table {
-  background: #12100c !important;
-  background-color: #12100c !important;
-  border: 1px solid #2a2418 !important;
+  background: #12140f !important;
+  background-color: #12140f !important;
+  border: 1px solid #262a1e !important;
 }
 th, td,
 .markdown-body th,
 .markdown-body td {
-  border: 1px solid #2a2418 !important;
+  border: 1px solid #262a1e !important;
 }
 th,
 .markdown-body th {
-  background: #0c0a06 !important;
-  background-color: #0c0a06 !important;
+  background: #0d0f0a !important;
+  background-color: #0d0f0a !important;
   color: #ffb000 !important;
 }
 
 hr,
 .markdown-body hr {
   border: 0 !important;
-  border-top: 1px solid #2a2418 !important;
+  border-top: 1px solid #262a1e !important;
 }
 
 .btn,
 button,
 .markdown-body .btn {
-  background: #12100c !important;
-  background-color: #12100c !important;
+  background: #12140f !important;
+  background-color: #12140f !important;
   border: 1px solid #ffb000 !important;
   color: #ffb000 !important;
 }
@@ -96,30 +95,30 @@ button,
 button:hover {
   background: #ffb000 !important;
   background-color: #ffb000 !important;
-  color: #080704 !important;
+  color: #0a0c09 !important;
 }
 
 ::selection {
   background: #ffb000 !important;
-  color: #080704 !important;
+  color: #0a0c09 !important;
 }
 
 ul, ol, li,
 .markdown-body ul,
 .markdown-body ol,
 .markdown-body li {
-  color: #e8e2d4 !important;
+  color: #e8e6dc !important;
 }
 
 p, span, div,
 .markdown-body p,
 .markdown-body span {
-  color: #e8e2d4 !important;
+  color: #e8e6dc !important;
 }
 
 .page-header,
 header {
-  background: #12100c !important;
-  background-color: #12100c !important;
-  border-bottom: 1px solid #2a2418 !important;
+  background: #12140f !important;
+  background-color: #12140f !important;
+  border-bottom: 1px solid #262a1e !important;
 }
