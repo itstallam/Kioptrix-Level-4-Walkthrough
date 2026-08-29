@@ -1,5 +1,15 @@
-theme: jekyll-theme-midnight
-title: Kioptrix Level 4.
-descripton: bOOt to R00t.
+theme: jekyll-theme-time-machine
+title: "Kioptrix Level 4."
+description: "bOOt to R00t."
 show_downloads: false
 baseurl: "/Kioptrix-Level-4-Walkthrough"
+url: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+author:
+  name: itstallam
+  url: https://github.com/itstallam
